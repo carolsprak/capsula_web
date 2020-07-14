@@ -1,0 +1,13 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'Listagem', stocks_path %></li>
+  <li class="active"><%= link_to 'Novo Produto', new_stock_path %></li>
+</ul>
+
+<h2>Novo Produto</h2>
+
+<%= render 'form' %>
+
+<%= link_to stocks_path, class: 'btn btn-info btn-xs' do %>
+	<i class="glyphicon glyphicon-arrow-left"></i> Voltar
+<% end %>
+

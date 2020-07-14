@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'Listagem', drinks_path %></li>
+  <li><%= link_to 'Nova Bebida', new_drink_path %></li>
+  <li class="active"><%= link_to 'Exibir', @drink %></li>
+  <li><%= link_to 'Alterar', edit_drink_path(@drink) %></li>
+</ul>
+
+<h2>Exibir Bebida</h2>
+
+<table class="table-reponsive">
+
+<tr>
+  <td>
+  <h3>Marca:</h3>
+  <p><%= @drink.brand.name %></p>
+  </td>  
+</tr>
+<tr>
+  <td>
+	<h3>Tipo:</h3>
+	<p><%= @drink.drink_type %></p>
+  </td>  
+</tr>
+
+<tr>
+  <td>
+  <h3>Categoria:</h3>
+  <p><%= @drink.drink_category %></p>
+  </td>  
+</tr>
+
+<tr>
+  <td>
+	<h3>Descrição:</h3>
+	<p><%= @drink.description %></p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+  <h3>Número de cápsulas:</h3>
+  <p><%= @drink.qt_capsule %></p>
+  </td>  
+</tr>
+
+</table>
+<br>
+<div>
+
+<%= link_to drinks_path, class: 'btn btn-info btn-xs' do %>
+	<i class="glyphicon glyphicon-arrow-left"></i> Voltar
+<% end %>
+
+</div>
+
+

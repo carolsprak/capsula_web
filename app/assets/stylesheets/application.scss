@@ -1,0 +1,101 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "toastr";
+
+
+.avatar-small {
+	width: 19px;
+}
+
+.avatar-medium {
+	width: 48px;
+}
+
+.avatar-large {
+	width: 68px;
+}
+
+.avatar-full {
+	width: 100%;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 2px;
+  height: 4rem;
+  width: 70%;
+}
+
+#USER
+.panel-default .panel-heading {
+  color: #ffffff;
+  background-color: #00A699;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.row-space {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.row-space-2 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.row-space-3 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.description {
+  color: #575757;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+//FORMS
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 2px;
+  height: 4rem;
+}
+
+//SIDEBAR
+
+.sidebar-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.sidebar-item {
+  padding-left: 10px 0;
+  font-size: 16px;
+  color: #82888a;
+}
+
+.sidebar-link {
+  color: #82888a;
+  text-decoration: none;
+}
+
+.sidebar-link:hover, .sidebar-link:focus {
+  color: #CACCCD;
+  text-decoration: none;
+}
+
+.active.sidebar-link {
+  color: #565A5C;
+  text-weight: bold;
+  text-decoration: none;
+}
+

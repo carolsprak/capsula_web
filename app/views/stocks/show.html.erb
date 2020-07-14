@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'Listagem', stocks_path %></li>
+  <li><%= link_to 'Novo Produto', new_stock_path %></li>
+  <li class="active"><%= link_to 'Exibir', @stock %></li>
+  <li><%= link_to 'Alterar', edit_stock_path(@stock) %></li>
+</ul>
+
+<h2>Exibir Produto</h2>
+
+<table class="table-reponsive">
+<tr>
+  <td>
+	<h3>Bebida:</h3>
+	<p><%= @stock.drink.drink_type %></p>
+  </td>  
+</tr>
+
+<tr>
+  <td>
+  <h3>Quantidade:</h3>
+  <p><%= @stock.quantity %></p>
+  </td>
+</tr>
+
+</table>
+<br>
+<div>
+
+<%= link_to stocks_path, class: 'btn btn-info btn-xs' do %>
+	<i class="glyphicon glyphicon-arrow-left"></i> Voltar
+<% end %>
+
+</div>
+
+

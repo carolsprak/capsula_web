@@ -1,0 +1,13 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'Listagem', drinks_path %></li>
+  <li class="active"><%= link_to 'Nova Bebida', new_drink_path %></li>
+</ul>
+
+<h2>Nova Bebida</h2>
+
+<%= render 'form' %>
+
+<%= link_to drinks_path, class: 'btn btn-info btn-xs' do %>
+	<i class="glyphicon glyphicon-arrow-left"></i> Voltar
+<% end %>
+

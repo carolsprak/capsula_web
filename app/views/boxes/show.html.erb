@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'Listagem', boxes_path %></li>
+  <li><%= link_to 'Nova Caixa', new_box_path %></li>
+  <li class="active"><%= link_to 'Exibir', @box %></li>
+  <li><%= link_to 'Alterar', edit_box_path(@box) %></li>
+</ul>
+
+<h2>Exibir Caixa</h2>
+
+<table class="table-reponsive">
+<tr>
+  <td>
+	<h3>Marca:</h3>
+	<p><%= @box.brand.name %></p>
+  </td>  
+</tr>
+
+<tr>
+  <td>
+  <h3>Quantidade de Cápsulas:</h3>
+  <p><%= @box.box_limite %></p>
+  </td>
+</tr>
+
+<tr>
+  <td>
+	<h3>Preço:</h3>
+	<p>R$ <%= @box.box_price %></p>
+  </td>
+</tr>
+
+</table>
+<br>
+<div>
+
+<%= link_to boxes_path, class: 'btn btn-info btn-xs' do %>
+	<i class="glyphicon glyphicon-arrow-left"></i> Voltar
+<% end %>
+
+</div>
+
+

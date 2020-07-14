@@ -1,0 +1,15 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'Listagem', boxes_path %></li>
+  <li><%= link_to 'Nova Caixa', new_box_path %></li>
+  <li><%= link_to 'Exibir', @box %></li>
+  <li class="active"><%= link_to 'Alterar', edit_box_path(@box) %></li>
+</ul>
+
+<h2>Alterar Caixa</h2>
+
+<%= render 'form' %>
+
+<%= link_to boxes_path, class: 'btn btn-info btn-xs' do %>
+	<i class="glyphicon glyphicon-arrow-left"></i> Voltar
+<% end %>
+

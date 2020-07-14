@@ -1,0 +1,15 @@
+<ul class="nav nav-tabs" role="tablist">
+  <li><%= link_to 'Listagem', brands_path %></li>
+  <li><%= link_to 'Nova Marca', new_brand_path %></li>
+  <li><%= link_to 'Exibir', @brand %></li>
+  <li class="active"><%= link_to 'Alterar', edit_brand_path(@brand) %></li>
+</ul>
+
+<h2>Alterar Marca de Café</h2>
+
+<%= render 'form' %>
+
+<%= link_to brands_path, class: 'btn btn-info btn-xs' do %>
+	<i class="glyphicon glyphicon-arrow-left"></i> Voltar
+<% end %>
+
