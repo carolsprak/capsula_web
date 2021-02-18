@@ -27,7 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.6'
 
 # usuário login
-gem 'devise', '~> 3'
+gem 'devise', '~> 4'
 
 #Melhorar as mensagens de notificação
 gem 'toastr-rails', '~> 1.0'
